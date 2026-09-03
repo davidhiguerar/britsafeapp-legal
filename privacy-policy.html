@@ -1,0 +1,196 @@
+<title>B'rit Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&display=swap">
+
+<style>
+  :root {
+    --ground: #FBF9F5;
+    --ink: #1A1A1C;
+    --muted: #55565B;
+    --rule: #E0DCD3;
+    --bronze: #8A6C34;
+    --bronze-soft: #A8874F;
+  }
+
+  :root:not([data-theme="light"]) {
+    @media (prefers-color-scheme: dark) {
+      --ground: #111315;
+      --ink: #F6F4EE;
+      --muted: #A0A8B3;
+      --rule: #2A2F35;
+      --bronze: #C2A676;
+      --bronze-soft: #A8874F;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #111315;
+    --ink: #F6F4EE;
+    --muted: #A0A8B3;
+    --rule: #2A2F35;
+    --bronze: #C2A676;
+    --bronze-soft: #A8874F;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: Newsreader, Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 72px 28px 120px;
+  }
+
+  .mark {
+    display: block;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-family: "Cormorant Garamond", Garamond, Georgia, serif;
+    font-size: clamp(38px, 6vw, 54px);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -.01em;
+    margin: 0 0 18px;
+    text-wrap: balance;
+  }
+
+  .updated {
+    font-family: Newsreader, serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--bronze-soft);
+    margin: 0 0 32px;
+  }
+
+  .lede {
+    font-size: 21px;
+    line-height: 1.6;
+    font-weight: 300;
+    color: var(--muted);
+    margin: 0 0 8px;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 48px 0;
+  }
+
+  h2 {
+    font-family: Newsreader, serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--bronze);
+    margin: 44px 0 14px;
+  }
+
+  h2:first-of-type { margin-top: 0; }
+
+  p { margin: 0 0 18px; }
+  p:last-child { margin-bottom: 0; }
+
+  a {
+    color: var(--bronze);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--bronze);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .foot {
+    margin-top: 64px;
+    padding-top: 28px;
+    border-top: 1px solid var(--rule);
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  @media print {
+    body { background: #fff; color: #000; font-size: 11pt; }
+    .page { padding: 0; max-width: none; }
+    h2 { color: #000; }
+  }
+
+  @media (max-width: 560px) {
+    body { font-size: 17px; }
+    .page { padding: 48px 22px 80px; }
+    .lede { font-size: 19px; }
+  }
+</style>
+
+<div class="page">
+
+  <svg class="mark" viewBox="0 0 512 512" aria-hidden="true">
+    <path d="M 256 126 A 130 130 0 1 0 348 168" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" style="color: var(--bronze)"/>
+    <line x1="348" y1="130" x2="348" y2="310" stroke="currentColor" stroke-width="16" stroke-linecap="round" style="color: var(--bronze)"/>
+    <circle cx="256" cy="256" r="20" fill="currentColor" style="color: var(--bronze)"/>
+  </svg>
+
+  <h1>What B’rit knows about you</h1>
+  <p class="updated">Last updated 3 September 2026</p>
+
+  <p class="lede">B’rit has no servers, no accounts and no analytics. It makes no network requests. Everything below stays on your iPhone unless you send it somewhere yourself.</p>
+
+  <hr>
+
+  <h2>What is stored on your iPhone</h2>
+  <p>Your Shomer’s name, their relationship to you, and the phone number you typed.</p>
+  <p>What you chose to protect — apps and categories as the anonymous tokens Apple’s picker gives us, plus any web addresses you typed yourself.</p>
+  <p>A record of what happened: when Covenant Mode started and stopped, when a shield was reached, when you paused, when you reached out. Whether the adult-content filter is on.</p>
+
+  <h2>Your Shomer’s passcode</h2>
+  <p>The code itself is never stored. B’rit keeps only a salted PBKDF2-SHA256 hash of it, in the iPhone’s Keychain, marked so it never reaches a backup or another device. The code cannot be read back out — it can only be checked against.</p>
+
+  <h2>What B’rit never receives</h2>
+  <p>Your browsing history. The addresses of sites you visit. The names of the apps you blocked. Screenshots, screen contents, messages, photos, or anything you type.</p>
+  <p>Apple’s Screen Time does not expose any of it, and B’rit does not ask. When a shield appears, B’rit learns that a shield appeared — nothing about what was behind it.</p>
+
+  <h2>Your Shomer’s details</h2>
+  <p>Their name and number belong to someone who never installed this app, so B’rit treats them carefully. Nothing is transmitted to them or about them.</p>
+  <p>When you choose to call or message, iOS opens Phone or Messages with the text prepared and you press send — B’rit never sends anything on your behalf. Your carrier’s usual terms apply to whatever you send.</p>
+
+  <h2>Third parties</h2>
+  <p>There are none. No advertising, no analytics, no crash reporting, no third-party code of any kind. Nothing about you is sold, shared or transmitted, because nothing about you ever leaves the device.</p>
+
+  <h2>Deleting your data</h2>
+  <p>Removing B’rit deletes the covenant, the protection settings and the record with it.</p>
+  <p>One thing outlives deletion by design: iOS keeps Keychain items across a reinstall, so your Shomer’s passcode may still be in place if you install B’rit again. That is deliberate — deleting the app should not be a way around the covenant. Your Shomer can replace the code at any time from the Covenant screen.</p>
+
+  <h2>Children</h2>
+  <p>B’rit is built for adults choosing restrictions for themselves. It is not directed at children and does not knowingly hold data about them.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the date at the top changes with it. Any change that would send data off the device will be announced in the app before it takes effect, not after.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy, or a request to see or delete anything B’rit holds, can be sent to <a href="mailto:appserver@kavodapp.com">appserver@kavodapp.com</a>.</p>
+
+  <div class="foot">
+    <p>This same text is carried inside the app, under Record → Privacy Policy, so it can be read without leaving B’rit.</p>
+  </div>
+
+</div>
